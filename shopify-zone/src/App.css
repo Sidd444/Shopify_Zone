@@ -3,7 +3,7 @@
   justify-content: space-evenly;
   margin-bottom: 4%;
   margin-left: 1%;
-  margin-top: 1%;
+  margin-top: 0.5%;
 }
 #navbar button{
   font-weight: bold;
@@ -44,7 +44,11 @@
 }
 #cart{
   overflow-y: scroll;
-  max-height: 80vh;
+  height: 40vh;
+}
+#pcart{
+  overflow-y: scroll;
+  height:50vh;
 }
 .main-content{
   display: flex;
@@ -52,10 +56,7 @@
 #cart>h1{
   margin-left: 200px;
 }
-#cart>h2{
-  margin-left: 200px;
-  font-size: 40px;
-}
+
 #cartCloth>img{
   height:50px;
   width:50px;
@@ -81,7 +82,7 @@
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .add-cloth-to-cart{
-  background-color: blue;
+  background-color: rgb(6, 155, 6);
   color: white;
   margin-top: 1%;
   border:none;

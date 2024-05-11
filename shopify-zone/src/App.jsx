@@ -49,7 +49,7 @@ function App() {
       <marquee behavior="scroll" direction="left" className="text-red-500" scrollamount="10">
         Check out our amazing deals on T-shirts!
       </marquee>
-      <div className="flex items-center mb-10 ml-10">
+      <div className="flex items-center mb-1 ml-10">
         <input type="text" placeholder="Search" className="mr-4 p-2 border border-gray-300 rounded-lg" />
         <div className="flex space-x-4">
           <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded">T-Shirt</button>

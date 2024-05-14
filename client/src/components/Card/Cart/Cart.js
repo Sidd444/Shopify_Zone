@@ -89,7 +89,13 @@ const Cart = () => {
                     </div>
                   </div>
                   <div className="checkout">
-                    <Button variant="outlined" onClick={handleCheckout}>
+                    <Button
+                      variant="outlined"
+                      onClick={() => {
+                        handleCheckout();
+                        window.location.reload("http://localhost:3000/cart");
+                      }}
+                    >
                       Checkout
                     </Button>
                   </div>
@@ -101,8 +107,13 @@ const Cart = () => {
       </Modal>
       <Modal open={openCheckoutModal} onClose={handleCheckoutClose}>
         <Box sx={style}>
-          <div className="d-flex w-100 h-100 justify-content-center align-items-center">
-            <h2>Thanks for ordering!</h2>
+          <div className="cart__header">
+            <h2>Order Success</h2>
+          </div>
+          <div className="cart__items__container">
+            <div className="d-flex w-100 h-100 justify-content-center align-items-center">
+              <h2>Thanks for ordering!</h2>
+            </div>
           </div>
         </Box>
       </Modal>
